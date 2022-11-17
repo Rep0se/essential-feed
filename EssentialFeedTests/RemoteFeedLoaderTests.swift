@@ -11,14 +11,14 @@ import EssentialFeed
 class RemoteFeedLoaderTests: XCTestCase {
 
     func test_init_doesNotRequestDataFromURL() {
-        let (client, _) = makeSUT()
+        let (_, client) = makeSUT()
         
         XCTAssertTrue(client.requestedURLs.isEmpty)
     }
 
     func test_load_requestsDataFromURL() {
         let url = URL(string: "https://a-given-url.com")!
-        let (client, sut) = makeSUT(url: url)
+        let (sut, client) = makeSUT(url: url)
         
         sut.load { _ in }
         
@@ -27,7 +27,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     
     func test_loadTwice_requestsDataFromURLTwice() {
         let url = URL(string: "https://a-given-url.com")!
-        let (client, sut) = makeSUT(url: url)
+        let (sut, client) = makeSUT(url: url)
         
         sut.load { _ in }
         sut.load { _ in }
@@ -36,7 +36,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     }
     
     func test_load_deliversErrorOnClientError() {
-        let (client, sut) = makeSUT()
+        let (sut, client) = makeSUT()
         
         expect(sut, toCompleteWithResult: .failure(.connectivity)) {
             let clientError = NSError(domain: "Test", code: 0)
@@ -45,7 +45,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     }
     
     func test_load_deliversErrorOnNon200HTTPResponse() {
-        let (client, sut) = makeSUT()
+        let (sut, client) = makeSUT()
 
         let samples = [199, 201, 300, 400, 500]
         
@@ -57,7 +57,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     }
     
     func test_load_deliversErrorOn200HTTPResponseWithInvalidJSON() {
-        let (client, sut) = makeSUT()
+        let (sut, client) = makeSUT()
         
         expect(sut, toCompleteWithResult: .failure(.invalidData)) {
             let invalidJSON = Data("Invalid JSON Data".utf8)
@@ -66,7 +66,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     }
     
     func test_load_deliversNoItemsOn200HTTPResponseWithEmptyJSONList() {
-        let (client, sut) = makeSUT()
+        let (sut, client) = makeSUT()
         
         expect(sut, toCompleteWithResult: .success([])) {
             let emptyListJSON = Data("{\"items\": []}".utf8)
@@ -74,11 +74,48 @@ class RemoteFeedLoaderTests: XCTestCase {
         }
     }
     
+    func test_load_deliveresItemsOn200HTTPResponseWithJSONItems() {
+        let (sut, client) = makeSUT()
+        
+        let item1 = FeedItem(
+            id: UUID(),
+            description: nil,
+            location: nil,
+            imageURL: URL(string: "https://a-url.com")!)
+        
+        let item1JSON = [
+            "id": item1.id.uuidString,
+            "image": item1.imageURL.absoluteString
+        ]
+        
+        let item2 = FeedItem(
+            id: UUID(),
+            description: "a description",
+            location: "a location",
+            imageURL: URL(string: "https://another-url.com")!)
+        
+        let item2JSON = [
+            "id": item2.id.uuidString,
+            "description": item2.description,
+            "location": item2.location,
+            "image": item2.imageURL.absoluteString
+        ]
+        
+        let itemsJSON = [
+            "items": [item1JSON, item2JSON]
+        ]
+        
+        expect(sut, toCompleteWithResult: .success([item1, item2])) {
+            let json = try! JSONSerialization.data(withJSONObject: itemsJSON)
+            client.complete(withStatusCode: 200, data: json)
+        }
+    }
+    
     // MARK: - Helpers
-    private func makeSUT(url: URL = URL(string: "https://a-url.com")!) -> (client: HTTPClientSpy, sut: RemoteFeedLoader) {
+    private func makeSUT(url: URL = URL(string: "https://a-url.com")!) -> (sut: RemoteFeedLoader, client: HTTPClientSpy) {
         let client = HTTPClientSpy()
         let sut = RemoteFeedLoader(url: url, client: client)
-        return (client, sut)
+        return (sut, client)
     }
     
     private func expect(_ sut: RemoteFeedLoader, toCompleteWithResult result: RemoteFeedLoader.Result, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
