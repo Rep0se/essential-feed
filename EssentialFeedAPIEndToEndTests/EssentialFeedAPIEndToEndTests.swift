@@ -38,13 +38,15 @@ final class EssentialFeedAPIEndToEndTests: XCTestCase {
         let loader = RemoteFeedLoader(url: testServerURL, client: client)
         trackForMemoryLeaks(client, file: file, line: line)
         trackForMemoryLeaks(loader, file: file, line: line)
+        
         let expectation = expectation(description: "Wait for load completion")
         var receivedResult: LoadFeedResult?
         loader.load { result in
             receivedResult = result
             expectation.fulfill()
         }
-        wait(for: [expectation], timeout: 6.0)
+        wait(for: [expectation], timeout: 8.0)
+        
         return receivedResult
     }
     
