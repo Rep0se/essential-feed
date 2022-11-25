@@ -106,7 +106,6 @@ class RemoteFeedLoaderTests: XCTestCase {
             location: "a location",
             imageURL: URL(string: "https://another-url.com")!)
         
-        
         let items = [item1.model, item2.model]
         
         expect(sut, toCompleteWithResult: .success(items)) {
