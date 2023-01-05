@@ -29,6 +29,7 @@
 		1DB0FFF8291F0083006A1A06 /* EssentialFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0FFF7291F0083006A1A06 /* EssentialFeed.docc */; };
 		1DB0FFFE291F0083006A1A06 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB0FFF3291F0083006A1A06 /* EssentialFeed.framework */; };
 		1DBBB3E1292D7EA900A70B39 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA6541E292D2CD5004DEE8A /* XCTestCase+MemoryLeakTracking.swift */; };
+		1DFABB6F2967808B00B99974 /* ValidateFeedCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFABB6E2967808B00B99974 /* ValidateFeedCacheUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		1DB0FFF6291F0083006A1A06 /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
 		1DB0FFF7291F0083006A1A06 /* EssentialFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeed.docc; sourceTree = "<group>"; };
 		1DB0FFFD291F0083006A1A06 /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DFABB6E2967808B00B99974 /* ValidateFeedCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFeedCacheUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				1D6043EC2964AD630082EC21 /* Helpers */,
 				1D6DD28429355C430055490B /* CacheFeedUseCaseTests.swift */,
 				1D6043EA2964ABFB0082EC21 /* LoadFeedFromCacheUseCaseTests.swift */,
+				1DFABB6E2967808B00B99974 /* ValidateFeedCacheUseCaseTests.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DFABB6F2967808B00B99974 /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				1DB000132922D2D5006A1A06 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				1D4DC65C2928373D004C689B /* URLSessionHTTPClientTests.swift in Sources */,
 				1D6043EE2964AD790082EC21 /* FeedStoreSpy.swift in Sources */,
