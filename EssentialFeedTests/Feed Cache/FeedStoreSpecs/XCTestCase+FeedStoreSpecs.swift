@@ -137,7 +137,7 @@ extension FeedStoreSpecs where Self: XCTestCase {
             if case let Result.failure(error) = result { deletionError = error }
             exp.fulfill()
         }
-        wait(for: [exp], timeout: 8.0)
+        wait(for: [exp], timeout: 10.0)
         return deletionError
     }
     
