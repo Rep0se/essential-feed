@@ -23,7 +23,7 @@ public final class FeedUIComposer {
         return { [weak controller] feed in
             guard let controller = controller else { return }
             controller.tableModel = feed.map { model in
-                FeedImageCellController(model: model, imageLoader: loader)
+                FeedImageCellController(viewModel: FeedImageViewModel(model: model, imageLoader: loader))
             }
         }
     }
