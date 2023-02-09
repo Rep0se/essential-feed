@@ -1,0 +1,9 @@
+/* 
+  Feed.strings
+  EssentialFeed
+
+  Created by Alexander Sundiev on 2/9/23.
+  
+*/
+"FEED_VIEW_TITLE" = "Моя лента";
+"FEED_VIEW_CONNECTION_ERROR" = "Не удалось подключиться к серверу";
