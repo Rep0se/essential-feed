@@ -374,14 +374,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		1D42CA07298C48040064EC49 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				1D27B7A2297B1FFD00EFB55D /* FeedUIIntegrationTests.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		1D42CA10298C4AF50064EC49 /* Feed UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,7 +387,7 @@
 		1D42CA11298C4C8D0064EC49 /* Feed UI */ = {
 			isa = PBXGroup;
 			children = (
-				1D42CA07298C48040064EC49 /* Controllers */,
+				1D27B7A2297B1FFD00EFB55D /* FeedUIIntegrationTests.swift */,
 				1D42C9FC298C44780064EC49 /* Helpers */,
 			);
 			path = "Feed UI";
