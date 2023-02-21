@@ -211,13 +211,13 @@
 			isa = PBXGroup;
 			children = (
 				1D55BC7D299EC34300B073B8 /* Helpers */,
+				1D961B1729A568DD0010EF23 /* SceneDelegateTests.swift */,
+				1D961B3929A56ED90010EF23 /* FeedAcceptanceTests.swift */,
 				1D961B3729A56C730010EF23 /* FeedUIIntegrationTests.swift */,
 				1DF17B30299E93200003DEC3 /* FeedLoaderWithFallbackCompositeTests.swift */,
 				1D55BC79299EB67300B073B8 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
 				1D55BC82299ED3ED00B073B8 /* FeedLoaderCacheDecoratorTests.swift */,
 				1D961AFC29A523710010EF23 /* FeedImageDataLoaderCacheDecoratorTests.swift */,
-				1D961B1729A568DD0010EF23 /* SceneDelegateTests.swift */,
-				1D961B3929A56ED90010EF23 /* FeedAcceptanceTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
