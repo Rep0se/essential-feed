@@ -423,7 +423,6 @@
 			children = (
 				1DB000122922D2D5006A1A06 /* LoadFeedFromRemoteUseCaseTests.swift */,
 				1D72EE7D299AE2C20033DB65 /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
-				1D773CE129A812C000AEEC37 /* LoadImageCommentsFromRemoteUseCase.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -589,6 +588,23 @@
 			path = "Shared API Infra";
 			sourceTree = "<group>";
 		};
+		1D773CEF29A8FFC500AEEC37 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				1D773CE329A813C100AEEC37 /* RemoteImageCommentsLoader.swift */,
+				1D773CE529A8147500AEEC37 /* ImageCommentsMapper.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
+		1D773CF029A9003700AEEC37 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				1D773CE129A812C000AEEC37 /* LoadImageCommentsFromRemoteUseCase.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
 		1DA6541D292D2C9A004DEE8A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -611,6 +627,7 @@
 			children = (
 				1D773CEC29A8FD7300AEEC37 /* Shared API */,
 				1D773CEE29A8FDC100AEEC37 /* Shared API Infra */,
+				1D773CF029A9003700AEEC37 /* Image Comments API */,
 				1D4DC6582926DFA9004C689B /* Feed API */,
 				1D6DD28329355C080055490B /* Feed Cache */,
 				1D72EE5E2995A4280033DB65 /* Feed Presentation */,
@@ -638,8 +655,6 @@
 				1DB000152922E28F006A1A06 /* RemoteFeedLoader.swift */,
 				1D4DC6562926D6B7004C689B /* FeedItemsMapper.swift */,
 				1D11188C295C1CB300B3EAD3 /* RemoteFeedItem.swift */,
-				1D773CE329A813C100AEEC37 /* RemoteImageCommentsLoader.swift */,
-				1D773CE529A8147500AEEC37 /* ImageCommentsMapper.swift */,
 				1D72EE82299BF10F0033DB65 /* RemoteFeedImageDataLoader.swift */,
 			);
 			path = "Feed API";
@@ -678,6 +693,7 @@
 				1D773CEA29A8FCD700AEEC37 /* Shared API */,
 				1D773CEB29A8FD2B00AEEC37 /* Shared API Infra */,
 				1D773CE729A8211500AEEC37 /* Image Comments Feature */,
+				1D773CEF29A8FFC500AEEC37 /* Image Comments API */,
 				1DB000112922CF72006A1A06 /* Feed Feature */,
 				1DB000142922E264006A1A06 /* Feed API */,
 				1D6DD2862936AE4D0055490B /* Feed Cache */,
