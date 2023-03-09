@@ -16,7 +16,7 @@
 		1D961B1829A568DD0010EF23 /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D961B1729A568DD0010EF23 /* SceneDelegateTests.swift */; };
 		1D961B2029A56BEA0010EF23 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D961B1A29A56BEA0010EF23 /* FeedImageDataLoaderPresentationAdapter.swift */; };
 		1D961B2129A56BEA0010EF23 /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D961B1B29A56BEA0010EF23 /* FeedUIComposer.swift */; };
-		1D961B2229A56BEA0010EF23 /* FeedLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D961B1C29A56BEA0010EF23 /* FeedLoaderPresentationAdapter.swift */; };
+		1D961B2229A56BEA0010EF23 /* LoadResourcePresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D961B1C29A56BEA0010EF23 /* LoadResourcePresentationAdapter.swift */; };
 		1D961B2329A56BEA0010EF23 /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D961B1D29A56BEA0010EF23 /* WeakRefVirtualProxy.swift */; };
 		1D961B2429A56BEA0010EF23 /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D961B1929A56BEA0010EF23 /* FeedViewAdapter.swift */; };
 		1D961B2E29A56C1B0010EF23 /* FeedViewController+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D961B2929A56C1B0010EF23 /* FeedViewController+TestHelpers.swift */; };
@@ -79,7 +79,7 @@
 		1D961B1929A56BEA0010EF23 /* FeedViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewAdapter.swift; sourceTree = "<group>"; };
 		1D961B1A29A56BEA0010EF23 /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		1D961B1B29A56BEA0010EF23 /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
-		1D961B1C29A56BEA0010EF23 /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
+		1D961B1C29A56BEA0010EF23 /* LoadResourcePresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresentationAdapter.swift; sourceTree = "<group>"; };
 		1D961B1D29A56BEA0010EF23 /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
 		1D961B2529A56C1B0010EF23 /* UIButton+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+TestHelpers.swift"; sourceTree = "<group>"; };
 		1D961B2629A56C1B0010EF23 /* UIRefreshControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+TestHelpers.swift"; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 				1D961B1B29A56BEA0010EF23 /* FeedUIComposer.swift */,
 				1D961B1D29A56BEA0010EF23 /* WeakRefVirtualProxy.swift */,
 				1D961B1A29A56BEA0010EF23 /* FeedImageDataLoaderPresentationAdapter.swift */,
-				1D961B1C29A56BEA0010EF23 /* FeedLoaderPresentationAdapter.swift */,
+				1D961B1C29A56BEA0010EF23 /* LoadResourcePresentationAdapter.swift */,
 				1D961B1929A56BEA0010EF23 /* FeedViewAdapter.swift */,
 				1DF4B330299E74850005FD04 /* Info.plist */,
 				1D773CDF29A7FAF200AEEC37 /* CombineHelpers.swift */,
@@ -314,7 +314,7 @@
 				1D773CE029A7FAF200AEEC37 /* CombineHelpers.swift in Sources */,
 				1D961B2029A56BEA0010EF23 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				1DF4B323299E74830005FD04 /* AppDelegate.swift in Sources */,
-				1D961B2229A56BEA0010EF23 /* FeedLoaderPresentationAdapter.swift in Sources */,
+				1D961B2229A56BEA0010EF23 /* LoadResourcePresentationAdapter.swift in Sources */,
 				1DF4B325299E74830005FD04 /* SceneDelegate.swift in Sources */,
 				1D961B2129A56BEA0010EF23 /* FeedUIComposer.swift in Sources */,
 				1D961B2329A56BEA0010EF23 /* WeakRefVirtualProxy.swift in Sources */,
