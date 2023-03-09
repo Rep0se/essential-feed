@@ -6,4 +6,4 @@
   
 */
 "FEED_VIEW_TITLE" = "Mon alimentation";
-"FEED_VIEW_CONNECTION_ERROR" = "Impossible de se connecter au serveur";
+"GENERIC_CONNECTION_ERROR" = "Impossible de se connecter au serveur";
