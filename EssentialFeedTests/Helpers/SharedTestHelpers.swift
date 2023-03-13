@@ -31,19 +31,19 @@ extension HTTPURLResponse {
 }
 
 extension Date {
-    func adding(seconds: TimeInterval) -> Date {
+    func adding(seconds: TimeInterval, calendar: Calendar = Calendar(identifier: .gregorian)) -> Date {
         return self + seconds
     }
     
-    func adding(minutes: Int) -> Date {
-        return Calendar(identifier: .gregorian).date(byAdding: .minute, value: minutes, to: self)!
+    func adding(minutes: Int, calendar: Calendar = Calendar(identifier: .gregorian)) -> Date {
+        return calendar.date(byAdding: .minute, value: minutes, to: self)!
     }
     
-    func adding(hours: Int) -> Date {
-        return Calendar(identifier: .gregorian).date(byAdding: .hour, value: hours, to: self)!
+    func adding(hours: Int, calendar: Calendar = Calendar(identifier: .gregorian)) -> Date {
+        return calendar.date(byAdding: .hour, value: hours, to: self)!
     }
     
-    func adding(days: Int) -> Date {
-        return Calendar(identifier: .gregorian).date(byAdding: .day, value: days, to: self)!
+    func adding(days: Int, calendar: Calendar = Calendar(identifier: .gregorian)) -> Date {
+        return calendar.date(byAdding: .day, value: days, to: self)!
     }
 }
