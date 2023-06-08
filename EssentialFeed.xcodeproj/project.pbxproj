@@ -109,6 +109,7 @@
 		1DBCAB762A27E25A0036B975 /* IMAGE_COMMENTS_IMAGE_COMMENTS_light_extraExtraExtraLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DBCAB752A27E25A0036B975 /* IMAGE_COMMENTS_IMAGE_COMMENTS_light_extraExtraExtraLarge.png */; };
 		1DBCAB782A27E2C90036B975 /* LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DBCAB772A27E2C90036B975 /* LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png */; };
 		1DBCAB7A2A27E4FD0036B975 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DBCAB792A27E4FD0036B975 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png */; };
+		1DC4E0322A324A750044FBB9 /* UIView+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC4E0312A324A750044FBB9 /* UIView+Container.swift */; };
 		1DC8313C2993058500A57CE4 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8313B2993058500A57CE4 /* Feed.storyboard */; };
 		1DC8313E2993064700A57CE4 /* Feed.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8313D2993064700A57CE4 /* Feed.xcassets */; };
 		1DC83140299456C200A57CE4 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8313F299456C100A57CE4 /* UITableView+Dequeueing.swift */; };
@@ -282,6 +283,7 @@
 		1DBCAB752A27E25A0036B975 /* IMAGE_COMMENTS_IMAGE_COMMENTS_light_extraExtraExtraLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMAGE_COMMENTS_IMAGE_COMMENTS_light_extraExtraExtraLarge.png; sourceTree = "<group>"; };
 		1DBCAB772A27E2C90036B975 /* LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png; sourceTree = "<group>"; };
 		1DBCAB792A27E4FD0036B975 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_CONTENT_light_extraExtraExtraLarge.png; sourceTree = "<group>"; };
+		1DC4E0312A324A750044FBB9 /* UIView+Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Container.swift"; sourceTree = "<group>"; };
 		1DC8313B2993058500A57CE4 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		1DC8313D2993064700A57CE4 /* Feed.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Feed.xcassets; sourceTree = "<group>"; };
 		1DC8313F299456C100A57CE4 /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
@@ -576,6 +578,7 @@
 				1D773CD529A679C800AEEC37 /* UITableView+HeaderSizing.swift */,
 				1DC8313F299456C100A57CE4 /* UITableView+Dequeueing.swift */,
 				1D72EE5429959DD10033DB65 /* UIRefreshControl+Helpers.swift */,
+				1DC4E0312A324A750044FBB9 /* UIView+Container.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1177,6 +1180,7 @@
 				1DC83140299456C200A57CE4 /* UITableView+Dequeueing.swift in Sources */,
 				1D42CA18298D75080064EC49 /* FeedImageCellController.swift in Sources */,
 				1D97F44D29C1028100B31D36 /* ImageCommentCellController.swift in Sources */,
+				1DC4E0322A324A750044FBB9 /* UIView+Container.swift in Sources */,
 				1D773CD629A679C800AEEC37 /* UITableView+HeaderSizing.swift in Sources */,
 				1DC831422994592E00A57CE4 /* UIImageView+Animations.swift in Sources */,
 				1D27B7B0297E3E0900EFB55D /* UIView+Shimmering.swift in Sources */,
