@@ -1,0 +1,9 @@
+/* 
+  Shared.strings
+  EssentialFeed
+
+  Created by Alexander Sundiev on 3/9/23.
+  
+*/
+
+"GENERIC_CONNECTION_ERROR" = "Не удалось подключиться к серверу";
