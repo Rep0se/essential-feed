@@ -111,10 +111,10 @@ class FeedAcceptanceTests: XCTestCase {
         }
     }
 
-    private func makeImageData0() -> Data { makeImageData(.red) }
-    private func makeImageData1() -> Data { makeImageData(.green) }
+    private func makeImageData0() -> Data { makeImageDataWith(.red) }
+    private func makeImageData1() -> Data { makeImageDataWith(.green) }
     
-    private func makeImageData(_ color: UIColor = .white) -> Data {
+    private func makeImageDataWith(_ color: UIColor = .white) -> Data {
         return UIImage.make(withColor: color).pngData(withAlpha: false)!
     }
 
